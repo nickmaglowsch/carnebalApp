@@ -1,8 +1,8 @@
 <?php 
 
-    require_once('../mysqli_connection.php');
-    $db = new conexao();
-    $conexaoDB = $db->getConexao();
+    require_once('dataBase.php');
+    
+    $conexaoDB = getConexao();
 
     $request_method=$_SERVER["REQUEST_METHOD"];
 
@@ -35,7 +35,6 @@
             $row['foto']=base64_encode($row['foto']);
             $response[]=$row;
         }
-        //0print_r($response);
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode($response, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
     }

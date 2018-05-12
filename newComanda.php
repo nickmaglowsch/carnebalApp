@@ -1,9 +1,7 @@
 <?php 
 
-    require_once('../mysqli_connection.php');
-    $db = new conexao();
-    $conexaoDB = $db->getConexao();
-    //echo "oi";
+    require_once('dataBase.php');
+    $conexaoDB = getConnetion();
     global $conexaoDB;
     $nmCliente= $_POST['nmCliente'];
     $numMesa= $_POST['numMesa'];
@@ -14,15 +12,7 @@
     $result = mysqli_query($conexaoDB, $query);
     if($result){
         echo "1";
-        // $response=array(
-        // 'status' => 1,
-        // 'status_message' =>'Comanda Criada com sucesso.'
-        // );
     } else {
         echo "0";
-        // $response=array(
-        // 'status' => 0,
-        // 'status_message' =>'Falha a Criar Comanda.'
-        // );
     }
 ?>

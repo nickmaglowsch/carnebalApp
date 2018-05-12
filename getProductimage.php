@@ -1,8 +1,7 @@
 <?php 
 
     require_once('../mysqli_connection.php');
-    $db = new conexao();
-    $conexaoDB = $db->getConexao();
+    $conexaoDB = getConexao();
 
     $request_method=$_SERVER["REQUEST_METHOD"];
 
