@@ -10,6 +10,7 @@
 
     $CPF = $_POST['cpf'];
     $Senha = $_POST['senha'];
+    $Senha = sha1($Senha);
     $sql = "select cdFuncionario from tbFuncionario where CPF='$CPF' and senha='$Senha'";
     
     $result = mysqli_query($conn, $sql);

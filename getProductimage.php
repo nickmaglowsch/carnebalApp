@@ -1,6 +1,6 @@
 <?php 
-
-    require_once('../mysqli_connection.php');
+    // this Script is just a testing and support script do not use it in production!
+    require_once('dataBase.php');
     $conexaoDB = getConexao();
 
     $request_method=$_SERVER["REQUEST_METHOD"];

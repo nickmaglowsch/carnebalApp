@@ -1,8 +1,8 @@
 <?php 
 
     require_once('dataBase.php');
-    
-    $conexaoDB = getConexao();
+    $db = new conexao();
+    $conexaoDB = $db->getConexao();
 
     $request_method=$_SERVER["REQUEST_METHOD"];
 

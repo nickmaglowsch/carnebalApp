@@ -1,7 +1,9 @@
 <?php 
 
     require_once('dataBase.php');
-    $conexaoDB = getConnetion();
+    $db = new conexao();
+    $conexaoDB = $db->getConexao();
+    
     global $conexaoDB;
     $nmCliente= $_POST['nmCliente'];
     $numMesa= $_POST['numMesa'];
