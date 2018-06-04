@@ -15,8 +15,7 @@ dtNascimento date,
 cargo varchar(6),
 email varchar(100),
 senha varchar(20),
-pathImagem varchar(255),
-foto blob(200000),
+foto varchar(255),
 primary key (cdFuncionario)
 );
 
@@ -36,7 +35,7 @@ cdProduto int not null auto_increment,
 nomeProduto varchar (20),
 descricao varchar (120),
 precoUnitario decimal(6,2),
-foto blob(200000),
+foto varchar(255),
 primary key (cdProduto)
 );
 
@@ -62,6 +61,7 @@ vlControle decimal (8,2) not null,
 cdComanda int not null,
 primary key (cdControle),
 foreign key (cdProduto) references tbProduto(cdProduto),
-foreign key (cdComanda) references tbComanda(cdComanda)
+foreign key (cdComanda) references tbComanda(cdComanda),
+UNIQUE KEY `ix_Controle` (cdProduto, cdComanda)
 );
 
