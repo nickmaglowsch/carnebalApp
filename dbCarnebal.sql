@@ -5,17 +5,20 @@ use dbCarnebal;
 create table tbFuncionario(
 cdFuncionario int not null auto_increment,
 cpf char(11),
-nomeFuncionario varchar(60),
+nomeFuncionario varchar(100),
 endereco varchar(200),
 complemento varchar(50),
 ddd char(2),
-telefone char(11),
+telefone varchar(11),
 sexo char(1),
 dtNascimento date,
 cargo varchar(6),
 email varchar(100),
-senha varchar(20),
+usuario char(12),
+senha varchar(255),
 foto varchar(255),
+primeiroAcesso boolean,
+ativo boolean,
 primary key (cdFuncionario)
 );
 
@@ -47,6 +50,9 @@ hrComanda time not null,
 vlTotal decimal (7,2),
 cdFuncionario int not null,
 cdCliente int,
+numComandaFisica int,
+numMesa int,
+isAtivo boolean,
 primary key (cdComanda),
 foreign key (cdCliente) references tbCliente(cdCliente),
 foreign key (cdFuncionario) references tbFuncionario(cdFuncionario)
