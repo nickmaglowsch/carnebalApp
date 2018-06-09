@@ -4,7 +4,7 @@ Class conexao{
 	var $servername = "localhost";
 	var $username = "root";
 	var $password = "";
-	var $dbname = "carnebal";
+	var $dbname = "dbcarnebal";
 	var $dbc;
 	function getConexao() {
 		$con = mysqli_connect($this->servername, $this->username, $this->password, $this->dbname) or die("Connection failed: " . mysqli_connect_error());

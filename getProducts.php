@@ -33,7 +33,7 @@
         $query = "select tbProduto.cdProduto,foto, nomeProduto, descricao, precoUnitario, 0 as qtProduto, 0 as cdComanda FROM tbProduto";
         if($id != -1)
         {
-            $query = "select foto, nomeProduto, descricao, precoUnitario from tbProduto as p left join tbcontrole as c on (p.cdProduto = c.cdProduto) inner join tbComanda as com on (c.cdComanda = com.cdComanda) where com.cdComanda =" .$id;
+            $query = "select foto, nomeProduto, descricao, precoUnitario from tbProduto as p inner join tbcontrole as c on (p.cdProduto = c.cdProduto) inner join tbComanda as com on (c.cdComanda = com.cdComanda) where com.cdComanda =" .$id. " and isAtivo=1";
         }
         $response=array();
         $result=mysqli_query($conexaoDB, $query);

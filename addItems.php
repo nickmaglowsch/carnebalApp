@@ -20,6 +20,12 @@
         from tbProduto where cdProduto =".$item['cdProduto']." ON DUPLICATE KEY UPDATE qtProduto= qtProduto + ".$item['qtProduto'];
         $result = mysqli_query($conexaoDB, $query);
      }
+     $query=" UPDATE tbcomanda
+    SET vlTotal = (SELECT sum(vlControle) from tbcontrole where cdComanda=".$item['cdComanda']. ")
+    WHERE cdComanda=".$item['cdComanda'];
+    
+    $result = mysqli_query($conexaoDB, $query);
+
      if($result){
          echo "1";
      }else{

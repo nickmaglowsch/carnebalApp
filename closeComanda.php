@@ -14,8 +14,7 @@
     $json = file_get_contents('php://input');
     $item = json_decode($json,true);
     $query=" UPDATE tbcomanda
-    SET vlTotal = (SELECT sum(vlControle) from tbcontrole where cdComanda=".$item['cdComanda']. "),
-    isAtivo = 0
+    SET vlTotal = (SELECT sum(vlControle) from tbcontrole where cdComanda=".$item['cdComanda']. ")
     WHERE cdComanda=".$item['cdComanda'];
     
     $result = mysqli_query($conexaoDB, $query);

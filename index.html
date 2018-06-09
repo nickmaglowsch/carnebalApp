@@ -1,290 +1,52 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"/>
 	<meta charset="UTF-8">
-	<title>Caderno do Garçom</title>
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<link rel="stylesheet" href="css/themes/my-custom-theme.css" />
-	<link rel="stylesheet" href="css/themes/carnebal.css" />
-	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-	<script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
-    <script type="text/javascript" src="js/index.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<title>API CARNEBAL</title>
 </head>
 <body>
+<div class="container">
+	<div class="content">
+		<center><h1 class="text-monospace" style="font-size: 100px">CARNEBAL</h1></center>
+		<center> <code> API </code></center> 
+		<div class="jumbotron">
+			<center> 	<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top"> <img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top"> <img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top">
+				<img src="Untitled-1.png" width="50" height="50" class="d-inline-block align-top"></center>
+				<div class="card">
 
-	<div data-role="page" id="login" style="background-color:peachpuff">
-		<div data-role="header" style="background-color:rgb(30, 30, 30)">
-			<H1 style="color: whitesmoke">Carnebal</H1>
-		</div><!--header-->
-		<div role="main">
-			<div data-role="none" class="textBox">
-				<div style="text-align: center; margin-bottom: 20px">
-					<img src="img/Untitled-1.png" class="" width="125" height="125" id="icon">
-					<h3 class="">Login</h3>
-				</div>
-					<span  class="glow" id="errorMsg"></span>
-					<form>
-						<label for="CPF" style="font-family: monospace; font-size: 20px">CPF</label>
-						<input data-role="none" type="number" name="CPF" id="CPF" placeholder="32318285977">
-						<label for="senha" style="font-family: monospace; font-size: 20px">Senha</label>
-						<input data-role="none" type="password" name="senha" id="senha" placeholder="">
-						<a href="#" id="btnlogin" >
-							<div style="background: rgb(41, 160, 80); width: 100%; margin:auto; margin-top: 5px; border-radius: 5px;" >
-								<h1 style="color: #FFFFFF; text-align: center; font-size: 18px; margin:auto; padding: 9px 0px; font-family: monospace ">Entrar</h1>
-							</div>
-						</a>
-					</form>	
-					<p class="mc-top-margin-1-5"><a href="begin-password-reset.html">Can't access your account?</a></p>
-				</div>
-	
-		</div><!-- /content -->
-	</div>
-
-
-
-
-
-	<!-- Menu de produtos-->
-	<div data-role="page" id="Menu" data-theme="d" >
-		<div data-role="header" data-theme="d"><h1>Menu</h1>
-			<a href="#PanelPg1" data-icon="bullets" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all">No text</a>
-			<a href="#NovaComanda" data-icon="plus" class="ui-btn ui-icon-plus ui-btn-icon-notext ui-corner-all" data-transition="slide">No text</a>
-		</div>
-		<div data-role="panel" id="PanelPg1" data-display="overlay" data-theme="d" style="background-color:rgba(205,150,81, .90); width:50%; padding:0">
-			<div style="margin-bottom: 0;padding-bottom: 0"> 
-				<img src="https://scontent.fssz3-1.fna.fbcdn.net/v/t1.0-9/26113754_1737094206365772_4187501352879553596_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeEYl3zPIEtDCt-UmSiPqJ92jCCTOXOqxFwgpgxihGbfL5LQbN0EsEFguIcZqkvTcvucTsoPdwb0GBw73JTTsSePCFJ3WeBfTdKA5kxEB8DnQQ&oh=07ef882f662caf8aceff6c72c0c84af7&oe=5B28F52A" alt="Avatar" id="avatar">
-				<h1 style="text-align:center; overflow:hidden; margin-top:0;padding-top:0;" id="numeFunc">Nome</h1>
-			</div>
-			<div style="margin-top:0;padding-top: 0;">
-				<a data-icon="user" class="ui-btn ui-icon-user ui-btn-icon-right" style="background-color:rgba(205,150,81, .9)" href="#">Perfil</a>
-				<a data-icon="power" class="ui-btn ui-icon-power ui-btn-icon-right" style="background-color:rgba(205,150,81, .9)" href="#login">Sair</a>
-			</div>
-		</div><!--painel-->
-		<ul id="mymenu" data-role="listview" data-filter="true" data-filter-placeholder="Produto...">
-
-		</ul>
-		
-		<footer data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#" data-iconpos="top" data-icon="calendar" data-transition="slide">Comandas Abertas</a></li>
-					<li><a href="#NovaComanda" data-iconpos="top" data-icon="plus" data-transition="slide">Nova Comanda</a></li>
-				</ul>
-			</div>
-		</footer>
-	</div><!-- Menu de produtos-->
-
-	<!-- Criar nova Comanda-->
-	<div data-role="page" id="NovaComanda" data-theme="d">
-		<div data-role="header" data-theme="d"><h1>Nova Comanda</h1>
-			<a href="#PanelPg2" data-icon="bullets" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all" data-transition="slide">No text</a>
-			<a href="#Menu" data-icon="grid" class="ui-btn ui-icon-grid ui-btn-icon-notext ui-corner-all" data-transition="slide">No text</a>
-		</div>
-		<div data-role="panel" id="PanelPg2" data-display="overlay" data-theme="d" style="background-color:rgba(205,150,81, .90); width:50%; padding:0">
-				<a href="#PanelPg2" data-icon="delete" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" style="float:right" data-theme="b">No text</a>
-				<div>
-					<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" id="avatar"><h1 style="text-align:right">  Nome</h1>
-				</div>
-					<a data-icon="user" class="ui-btn ui-icon-user ui-btn-icon-right" style="background-color:rgba(205,150,81, .9)" href="#">Perfil</a>
-					<a data-icon="power" class="ui-btn ui-icon-power ui-btn-icon-right" style="background-color:rgba(205,150,81, .9)" href="#login">Sair</a>
-			</div><!--painel-->
-		<div data-role="content">
-            <form id="ContentNovaComanda">
-                <label for="NomeCliente">Nome</label>
-                <input name="NomeCliente" id="NomeCliente" type="text"/>
-                <label for="numMesa">Numero da Mesa</label>
-                <input name="numMesa" id="numMesa" type="number"/>
-                <a id="btnCriarNovaComanda" href="#" class="ui-btn" style="background: greenyellow"  data-theme="d" >Abrir Comanda</a>
-				<span class="glow" id="erroCriarComanda"></span>
-			</form>
-
-			
-		</div>
-		<footer data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#" data-iconpos="top" data-icon="calendar" data-transition="slide">Comandas Abertas</a></li>
-					<li><a href="#Menu" data-iconpos="top" data-icon="grid" data-transition="slide">Menu</a></li>
-				</ul>
-			</div>
-		</footer>
-	</div><!-- Criar nova Comanda-->
-
-
-	<!-- Conteudo Comanda-->
-	<div data-role="page" id="ConteudoComanda" data-theme="d">
-			<div data-role="header" data-theme="d"><h1>Comanda Numero</h1>
-				<a href="#PanelPg3" data-icon="bullets" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all" data-transition="slide">No text</a>
-				<a href="#Menu" data-icon="grid" class="ui-btn ui-icon-grid ui-btn-icon-notext ui-corner-all" data-transition="slide">No text</a>
-			</div>
-			<div data-role="panel" id="PanelPg1" data-display="overlay" data-theme="d" style="background-color:rgba(205,150,81, .90); width:50%; padding:0">
-				<div style="margin-bottom: 0;padding-bottom: 0"> 
-						<img src="https://scontent.fssz3-1.fna.fbcdn.net/v/t1.0-9/26113754_1737094206365772_4187501352879553596_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeEYl3zPIEtDCt-UmSiPqJ92jCCTOXOqxFwgpgxihGbfL5LQbN0EsEFguIcZqkvTcvucTsoPdwb0GBw73JTTsSePCFJ3WeBfTdKA5kxEB8DnQQ&oh=07ef882f662caf8aceff6c72c0c84af7&oe=5B28F52A" alt="Avatar" id="avatar">
-						<h1 style="text-align:center; overflow:hidden; margin-top:0;padding-top:0;" id="numeFunc">Nome</h1>
-					</div>
-					<div style="margin-top:0;padding-top: 0;">
-						<a data-icon="user" class="ui-btn ui-icon-user ui-btn-icon-right" style="background-color:rgba(205,150,81, .9)" href="#">Perfil</a>
-						<a data-icon="power" class="ui-btn ui-icon-power ui-btn-icon-right" style="background-color:rgba(205,150,81, .9)" href="#login">Sair</a>
-					</div>
-				</div><!--painel-->
-				<ul id="listConteudoComanda" data-role="listview" data-filter="true" data-filter-placeholder="Produto...">
-
+						<center> <h1> Endpoints</h1></center> 
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><b>POST</b> /addItems.php <I>PARAMS:</I>json{items}</li>
+						<li class="list-group-item"><b>POST</b>/changeProfileImage.php</li>
+						<li class="list-group-item"><b>POST</b>/closeComanda.php</li>
+						<li class="list-group-item"><b>GET </b>/getComandasAbertas.php</li>
+						<li class="list-group-item"><b>GET </b>/getProducts.php <I>PARAMS:</I>id</li>
+						<li class="list-group-item"><b>POST</b>/login.php <I>PARAMS:</I>senha/cpf formData</li>
+						<li class="list-group-item"><b>POST</b>/firstLogin.php<I>PARAMS:</I>senha/cpf formData</li>
 					</ul>
-
-
-
-		<footer data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#" data-iconpos="top" data-icon="calendar" data-transition="slide">Comandas Abertas</a></li>
-					<li><a href="#Menu" data-iconpos="top" data-icon="grid" data-transition="slide">Menu</a></li>
-				</ul>
+		
 			</div>
-		</footer>
-	</div><!-- Conteudo Comanda-->
 
-	<!-- Comandas abertas-->
-		<div data-role="page" id="ComandasAbertas" data-theme="d" >
-				<div data-role="header" data-theme="d"><h1>Comandas Abertas</h1>
-					<a href="#PanelPg1" data-icon="bullets" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all">No text</a>
-					<a href="#NovaComanda" data-icon="plus" class="ui-btn ui-icon-plus ui-btn-icon-notext ui-corner-all" data-transition="slide">No text</a>
-				</div>
-				<div data-role="panel" id="PanelPg1" data-display="overlay" data-theme="d" style="background-color:rgba(205,150,81, .90); width:50%; padding:0">
-						<div style="margin-bottom: 0;padding-bottom: 0"> 
-							<img src="https://scontent.fssz3-1.fna.fbcdn.net/v/t1.0-9/26113754_1737094206365772_4187501352879553596_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeEYl3zPIEtDCt-UmSiPqJ92jCCTOXOqxFwgpgxihGbfL5LQbN0EsEFguIcZqkvTcvucTsoPdwb0GBw73JTTsSePCFJ3WeBfTdKA5kxEB8DnQQ&oh=07ef882f662caf8aceff6c72c0c84af7&oe=5B28F52A" alt="Avatar" id="avatar">
-							<h1 style="text-align:center; overflow:hidden; margin-top:0;padding-top:0;" id="numeFunc">Nome</h1>
-						</div>
-						<div style="margin-top:0;padding-top: 0;">
-							<a data-icon="user" class="ui-btn ui-icon-user ui-btn-icon-right" style="background-color:rgba(205,150,81, .9)" href="#">Perfil</a>
-							<a data-icon="power" class="ui-btn ui-icon-power ui-btn-icon-right" style="background-color:rgba(205,150,81, .9)" href="#login">Sair</a>
-						</div>
-				</div><!--painel-->
-				<ul id="mymenu" data-role="listview" data-filter="true" data-filter-placeholder="Produto..."></ul>
-				<footer data-role="footer" data-position="fixed">
-					<div data-role="navbar">
-						<ul>
-							<li><a href="#" data-iconpos="top" data-icon="calendar" data-transition="slide">Comandas Abertas</a></li>
-							<li><a href="#NovaComanda" data-iconpos="top" data-icon="plus" data-transition="slide">Nova Comanda</a></li>
-						</ul>
-					</div>
-				</footer>
-			</div><!-- Comandas abertas-->
+		</div>
 
-	<script>
-		var idComanda;
-			$(document).on('pageinit', '#Menu', function(){ 
-				console.log("aaa");
-				$.ajax({
-					type: 'GET',
-					dataType: 'json',
-					url: '/getProducts',
-					success: function (products){
-						$.each(products, function(i, product){
-							console.log(product);
-							$("#mymenu").append('<li><img src="data:image/jpg;base64,'+ product.foto +'"><h1>' + product.nomeProduto +'</h1> <p>Descrição:'+ product.descricao + '<p class="ui-li-aside"><strong> Preço:'+ product.precoUnitario +'</strong></p></li>');
-						})
-						$("#mymenu").listview("refresh");
-					},
-				})
-				
-			});
-
-			$(document).on('pageinit', '#ConteudoComanda', function(){ 
-				var URLcomanda = '/getProducts/'+ idComanda;
-				$.ajax({
-					type: 'Get',
-					dataType: 'json',
-					url: URLcomanda,
-					success: function (products){
-						$.each(products, function(i, product){
-							console.log(product);
-							$("#listConteudoComanda").append('<li><img src="data:image/jpg;base64,'+ product.foto +'"><h1>' + product.nomeProduto +'</h1> <p>Descrição:'+ product.descricao + '<p class="ui-li-aside"><strong> Preço:'+ product.precoUnitario +'</strong></p></li>');
-						})
-						$("#listConteudoComanda").listview("refresh");
-					},
-				})
-			});
-
-			$(document).ready(function(){
-				$('#btnlogin').click(function(e){
-					e.preventDefault();
-					var cpf = $('#CPF').val();
-					var senha = $('#senha').val();
-	
-					$.ajax({
-						type: 'POST',
-						url:'login.php',
-						data:{
-							cpf:cpf,
-							senha:senha
-						},
-						success: function(data){
-							if (data > 0){
-								localStorage.setItem("id", data);
-								console.log(localStorage.getItem("id"));
-								$.mobile.changePage("#Menu",{transition:"slide"});
-							} else {
-								console.log("a");
-								$('#errorMsg').html('Login Invalido!');
-								$("#icon").addClass("face");
-							}
-						}
-					})
-				})
-				$('#CPF').click(function(){
-					$('#errorMsg').html('');
-					$("#icon").removeClass("face");
-				})
-				$('#senha').click(function(){
-					$('#errorMsg').html('');
-					$("#icon").removeClass("face");
-				})
-				$('.ui-icon-power').click(function(){
-					localStorage.removeItem("id");
-				})
-				$('#btnCriarNovaComanda').click(function(e){
-					e.preventDefault();
-					e.stopPropagation();
-					var nmCliente = $("#NomeCliente").val();
-					var numMesa = $("#numMesa").val();
-					var cdFuncionario = localStorage.getItem("id");
-					if ( nmCliente.length === 0 || numMesa.length === 0 ) {
-						$('#erroCriarComanda').html('Todos os campos devem ser preenchidos');
-						if (nmCliente.length === 0 )
-							$("#NomeCliente").focus();
-						if (numMesa.length === 0 )
-							$("#numMesa").focus();
-							
-					} else {
-						$.ajax({
-							type: 'POST',
-							url:'newComanda.php',
-							data:{
-								nmCliente:nmCliente,
-								numMesa:numMesa,
-								cdFuncionario:cdFuncionario,
-							},
-							success: function(data){
-								if (data > 0){
-									$.mobile.changePage("#ConteudoComanda",{transition:"slide"});
-								} else {
-									console.log(data);
-									console.log("a");
-									$('#erroCriarComanda').html('Falha ao criar Comanda');
-								}
-							}
-						})
-					}
-				})
-
-			})
-	</script>
-
+	</div>
+</div>
 </body>
 </html>
